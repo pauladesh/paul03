@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block title %}{% endblock %}</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+        <style>
+        /*styling background*/
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 50vh;
+            justify-content: center;
+            align-items: center;
+            background-size: cover;
+            font-family: sans-serif;
+            color: #000;
+            }
+            h1{
+                color: lightblue;
+                }
+                /* styling the button*/
+                button {
+                    padding: 1px 1px;
+                    display: inline-block;
+                    color: #008000;
+                    letter-spacing: 1px;
+                    font-size: 30;
+                    overflow: hidden;
+                }
+
+                /*creating animation effect*/
+                button:hover {
+                    color: #111;
+                    background: #526cff;
+                    box-shadow: 0 0 50px #526cff;
+                }
+
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            {% block body %}
+            {% endblock %}
+        </div>
+
+    </body>
+</html>
